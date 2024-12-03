@@ -1,9 +1,8 @@
 import moment from "moment";
-import styles from "./list.module.scss";
-import { TableCellProps } from "./types";
-import Button from "../../components/Buttons";
 import { useDispatch } from "react-redux";
 import { closeTable } from "../../appSlices";
+import styles from "./list.module.scss";
+import { TableCellProps } from "./types";
 const TableCell: React.FC<TableCellProps> = ({ table, setActiveOrderEdit }) => {
   const dispatch = useDispatch();
   return (
@@ -27,14 +26,16 @@ const TableCell: React.FC<TableCellProps> = ({ table, setActiveOrderEdit }) => {
           >{`Позиции: ${table.order.length}`}</p>
         </div>
       </div>
-      <Button
+
+      <button
+        className={styles.close_btn}
         onClick={(e) => {
           e.stopPropagation();
           dispatch(closeTable(table.id));
         }}
       >
-        Закрыть
-      </Button>
+        X
+      </button>
     </div>
   );
 };

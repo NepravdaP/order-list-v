@@ -1,6 +1,6 @@
 .container {
   position: relative;
-
+  box-sizing: border-box;
   height: 100%;
 }
 .header {
@@ -13,7 +13,7 @@
   font-weight: 500;
   background-color: #fff;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
   border-bottom: 2px solid #000;
@@ -71,4 +71,52 @@
   &__name {
     font-size: 1.5rem;
   }
+}
+
+.header_circles {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+
+  gap: 10px;
+  color: #fff;
+
+  &__ela {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba($color: #039300, $alpha: 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__elc {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #5a5a6f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.close_btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  font-size: 22px;
+}
+
+.header_btn {
+  height: 40px;
+
+  border-radius: 15px;
+  border: none;
+  margin-right: 15px;
+  background-color: rgba($color: #f0453a, $alpha: 1);
+  color: #fff;
+  font-size: 22px;
 }
