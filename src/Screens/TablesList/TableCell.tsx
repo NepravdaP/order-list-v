@@ -28,7 +28,6 @@ const TableCell: React.FC<TableCellProps> = ({ table, setActiveOrderEdit }) => {
         </div>
       </div>
       <Button
-        styletype="secondary_link"
         onClick={(e) => {
           e.stopPropagation();
           dispatch(closeTable(table.id));

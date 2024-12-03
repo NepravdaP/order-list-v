@@ -5,18 +5,21 @@ const NewPos: React.FC<newPosProps> = ({ newPos, setNewPos }) => {
     <div className={styles.new_pos}>
       <div className={styles.position__text}>
         <input
+          className={styles.order_input}
           type="text"
           placeholder="Название блюда"
           value={newPos.name}
           onChange={(e) => setNewPos({ ...newPos, name: e.target.value })}
         />
         <input
+          className={styles.order_input}
           type="text"
           placeholder="Дополнительно"
           value={newPos.special}
           onChange={(e) => setNewPos({ ...newPos, special: e.target.value })}
         />
         <input
+          className={styles.order_input}
           type="number"
           placeholder="Количество"
           value={newPos.quantity}

@@ -46,10 +46,9 @@ const AddTable: React.FC<AddTableProps> = ({ setIsAddTable, setTableList }) => {
           }}
         >
           <div className={styles.name_input}>
-            <p className={styles.name_input__title}>Стол: </p>
             <input
               type="text"
-              placeholder="Название/номер"
+              placeholder="Название/номер стола"
               value={tableName}
               onChange={(e) => setTableName(e.target.value)}
             />

@@ -25,7 +25,7 @@ const TablesListScreen = () => {
   }, [tablesStore]);
   return (
     <div className={styles.container}>
-      <div className={styles.header}>header</div>
+      <div className={styles.header}>Список столов</div>
       <div className={styles.table}>
         {tablesList.length > 0 ? (
           tablesList
