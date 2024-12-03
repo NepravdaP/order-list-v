@@ -1,0 +1,45 @@
+.login {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 10px;
+  gap: 50px;
+  height: 100%;
+
+  .info_block {
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__circle {
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+    }
+
+    &__active {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__closed {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.info_block__circle__active {
+  background-color: rgba($color: green, $alpha: 0.7);
+}

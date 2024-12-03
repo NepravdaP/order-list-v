@@ -1,0 +1,98 @@
+.order {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba($color: #000, $alpha: 0.2);
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+
+  .order_container {
+    height: 80%;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  .order_header {
+    height: 40px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+  }
+  .order_body {
+    position: relative;
+    height: calc(100% - 51px);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 10px;
+  }
+
+  .order_list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: scroll;
+    height: 450px;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+.position {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 2px 5px;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 10px;
+  }
+  &__check {
+    display: flex;
+    justify-content: center;
+  }
+
+  .dish_name {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 200px;
+    white-space: nowrap;
+    font-size: 1.2rem;
+  }
+  .dish_special {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 200px;
+  }
+}
+
+.new_pos {
+  align-items: center;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 5px 5px;
+}
+
+.btn_block {
+  position: absolute;
+  width: 300px;
+  bottom: 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  gap: 20px;
+}
